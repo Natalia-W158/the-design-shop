@@ -74,6 +74,23 @@ p{
 }
 
 
+.footer{
+    margin: 3em 0;
+}
+
+.footerBox{
+    padding: .5em;
+}
+.footerBox p{
+    font-size: smaller;
+}
+.copyright{
+    font-size: smaller;
+    color: var(--secondarycolor);
+    text-align: center;
+}
+
+
 /* Mobile Version_______________________________________*/
 
 
@@ -91,22 +108,6 @@ p{
 
     h1{
         font-size: smaller;
-    }
-
-    .footer{
-        margin: 3em 0;
-    }
-
-    .footerBox{
-        padding: .5em;
-    }
-    .footerBox p{
-        font-size: smaller;
-    }
-    .copyright{
-        font-size: smaller;
-        color: var(--secondarycolor);
-        text-align: center;
     }
 }
 

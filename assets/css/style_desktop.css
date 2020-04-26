@@ -1,5 +1,8 @@
 @media only screen and (min-width:769px)
 {
+    h1{
+        padding-left: .5em;
+    }
     h1:hover{
         color: var( --secondarycolor);
     }
@@ -7,6 +10,7 @@
    li:hover{
         color: var( --secondarycolor);
     }
+
     ul{
         float: right;
     }    
@@ -22,18 +26,22 @@
     }
 
     #product:first-child{
-        width: 100%;
+        width: 99.9%;
         grid-template-areas: "itemsImage itemsImage itemsImage itemsImage itemsImage itemsImage"
                              "itemName   itemName    itemName price price price"
                              "brandname  brandname brandname brandname brandname brandname";
 
                             }
-/*  .box{
-     border: 3px solid red;
- } */
 
- .footer, .footerBox{
-     display: none;
- }
+ .footer{
+     padding-top: 5em;
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(4,25%);
+     grid-template-rows: 1fr;
+    }
+    .footerBox{
+        text-align: center;
+    }
  
 }
