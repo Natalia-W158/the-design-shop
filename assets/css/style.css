@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root{
+    --primarycolor: #323A45;
+    --secondarycolor: #848484;
+    font-family: Karla;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width:320px)
+{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 1em;
+    }
+    h1{
+        text-transform: uppercase;
+        font-size: smaller;
+    }
+
+    menu img{
+        width: 20px;
+        position: absolute;
+        top: 1.5em;
+        right: 1em;
+    }
+
+    main{
+
+    }
+
+}
