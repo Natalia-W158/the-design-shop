@@ -45,9 +45,9 @@ img{
     #product{
         display: grid;
         box-sizing: border-box;
-        gap: .1em 0;
+        gap: .3em 0;
         grid-template-columns: 1fr 80px;
-        grid-template-rows: 1fr .1fr .1fr;
+        grid-template-rows: 1fr auto .1fr;
         grid-template-areas: "itemsImage itemsImage"
                              "itemName   price"
                              "brandname  brandname";
@@ -57,6 +57,11 @@ img{
         font-size: smaller;
         margin: 0 0.5em;
     } 
+
+    p{
+        margin: 0.1em;
+    }
+
 
     .itemsImage{
         grid-area: itemsImage;
@@ -79,6 +84,10 @@ img{
         color: var(--secondarycolor);
     }
 
+    .footer{
+        margin: 3em 0;
+    }
+
     .footerBox{
         padding: .5em;
     }
@@ -88,6 +97,7 @@ img{
     .copyright{
         font-size: smaller;
         color: var(--secondarycolor);
+        text-align: center;
     }
 }
 
