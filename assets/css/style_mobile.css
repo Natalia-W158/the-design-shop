@@ -11,6 +11,11 @@ body{
     padding: 1em;
     height: 100vh;
 }
+.nav-tbl-desktop ul li{
+    display: inline-flex;
+    list-style-type: none;
+    padding: .8em;
+}
 
 img{
     width: 100%;
@@ -18,28 +23,35 @@ img{
     background-size: cover;
 }
 
+h1{
+    text-transform: uppercase;
+}
+menu img{
+    width: 20px;
+    position: absolute;
+    right: 1.5em;
+    top: 2.5em;
+
+}
+
+
 /* Mobile Version_______________________________________*/
 
 
-@media only screen and (max-width:320px)
+@media only screen and (max-width:768px)
 
 {
-    nav{
+    .nav-tbl-desktop{
+        display: none;
+    }
+
+    .nav-mobile{
         display: flex;
-        justify-content: space-between;
         padding: 1em;
     }
 
     h1{
-        text-transform: uppercase;
         font-size: smaller;
-    }
-
-    menu img{
-        width: 20px;
-        position: absolute;
-        top: 1.5em;
-        right: 1em;
     }
 
     #product{
