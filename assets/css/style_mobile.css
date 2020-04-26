@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+:root{
+    --primarycolor: #323A45;
+    --secondarycolor: #848484;
+    font-family: Karla;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.box{
+    margin: 0 .5em;
+    height: auto;
+}
+
+#product{
+    box-sizing: border-box;
+    display: grid;
+}
+
+.itemsImage{
+    grid-area: itemsImage;
+}
+
+.itemName{
+    grid-area: itemName;
+    color: var(--primarycolor); 
+}    
+
+.price{
+    grid-area: price;  
+    display: flex;
+    justify-content: flex-end;
+    color: var(--primarycolor);
+}
+
+.brandname{
+    grid-area: brandname;
+}
+
+.brandname p{
+    color: var(--secondarycolor);
+}
+
+/* Mobile Version_____________*/
+
+
+@media only screen and (max-width:320px)
+{
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+    }
+    h1{
+        text-transform: uppercase;
+        font-size: smaller;
+    }
+
+    menu img{
+        width: 20px;
+        position: absolute;
+        top: 1.5em;
+        right: 1em;
+    }
+
+    #product{
+        gap: .1em 0;
+        grid-template-columns: 1fr .5fr;
+        grid-template-rows: 1fr .1fr .1fr;
+        grid-template-areas: "itemsImage itemsImage"
+                             "itemName   price"
+                             "brandname  brandname";
+
+    }
+
+    .box{
+        font-size: smaller;
+    }  
+}
+
+
