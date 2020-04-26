@@ -8,7 +8,7 @@
 
 body{
     margin: 0;
-    padding: 0;
+    padding: 1em;
     height: 100vh;
 }
 
@@ -18,50 +18,18 @@ img{
     background-size: cover;
 }
 
-.box{
-    margin: 0 .5em;
-    height: auto;
-}
-
-#product{
-    box-sizing: border-box;
-    display: grid;
-}
-
-.itemsImage{
-    grid-area: itemsImage;
-}
-
-.itemName{
-    grid-area: itemName;
-    color: var(--primarycolor); 
-}    
-
-.price{
-    grid-area: price;  
-    display: flex;
-    justify-content: flex-end;
-    color: var(--primarycolor);
-}
-
-.brandname{
-    grid-area: brandname;
-}
-
-.brandname p{
-    color: var(--secondarycolor);
-}
-
-/* Mobile Version_____________*/
+/* Mobile Version_______________________________________*/
 
 
 @media only screen and (max-width:320px)
+
 {
     nav{
         display: flex;
         justify-content: space-between;
         padding: 1em;
     }
+
     h1{
         text-transform: uppercase;
         font-size: smaller;
@@ -75,18 +43,54 @@ img{
     }
 
     #product{
+        display: grid;
+        box-sizing: border-box;
         gap: .1em 0;
-        grid-template-columns: 1fr .5fr;
+        grid-template-columns: 1fr 80px;
         grid-template-rows: 1fr .1fr .1fr;
         grid-template-areas: "itemsImage itemsImage"
                              "itemName   price"
                              "brandname  brandname";
 
     }
-
     .box{
         font-size: smaller;
-    }  
+        margin: 0 0.5em;
+    } 
+
+    .itemsImage{
+        grid-area: itemsImage;
+    }
+    
+    .itemName{
+        grid-area: itemName;
+        color: var(--primarycolor); 
+    }    
+    
+    .price{
+        grid-area: price;  
+        display: flex;
+        justify-content: flex-end;
+        color: var(--primarycolor);
+    }
+    
+    .brandname{
+        grid-area: brandname;
+        color: var(--secondarycolor);
+    }
+
+    .footerBox{
+        padding: .5em;
+    }
+    .footerBox p{
+        font-size: smaller;
+    }
+    .copyright{
+        font-size: smaller;
+        color: var(--secondarycolor);
+    }
 }
+
+
 
 
