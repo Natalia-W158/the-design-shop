@@ -1,11 +1,39 @@
 @media only screen and (min-width:769px)
 {
+    h1:hover{
+        color: var( --secondarycolor);
+    }
 
-    .menu img{
+   li:hover{
+        color: var( --secondarycolor);
+    }
+    ul{
+        float: right;
+    }    
+
+    menu img{
         display: none;
     }
-    .nav-tbl-desktop{
-        display: block;
+    
+    #product{
+        width: 33.3%;
+        float: left;
+    
     }
 
+    #product:first-child{
+        width: 100%;
+        grid-template-areas: "itemsImage itemsImage itemsImage itemsImage itemsImage itemsImage"
+                             "itemName   itemName    itemName price price price"
+                             "brandname  brandname brandname brandname brandname brandname";
+
+                            }
+/*  .box{
+     border: 3px solid red;
+ } */
+
+ .footer, .footerBox{
+     display: none;
+ }
+ 
 }
