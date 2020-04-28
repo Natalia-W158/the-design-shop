@@ -17,7 +17,8 @@
     
     a {
         color: initial;
-        text-decoration: none; 
+        text-decoration: none;
+        cursor: url(../icons/icons8-pixel-herz-50.png),auto;
     }
 
     menu img{
@@ -43,9 +44,9 @@
     .footerBox{
         text-align: center;
     }
+
  .itemsImage:hover {
      opacity: 50%;
-     cursor: url(../icons/icons8-pixel-herz-50.png),auto;
  }
 
 }
