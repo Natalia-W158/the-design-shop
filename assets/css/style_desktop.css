@@ -13,7 +13,12 @@
 
     ul{
         float: right;
-    }    
+    }   
+    
+    a {
+        color: initial;
+        text-decoration: none; 
+    }
 
     menu img{
         display: none;
@@ -22,7 +27,6 @@
     #product{
         width: 33.3%;
         float: left;
-
     }
 
     #product:first-child{
@@ -41,6 +45,7 @@
     }
  .itemsImage:hover {
      opacity: 50%;
+     cursor: url(../icons/icons8-pixel-herz-50.png),auto;
  }
 
 }
