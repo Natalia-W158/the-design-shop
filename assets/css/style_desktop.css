@@ -22,16 +22,12 @@
     #product{
         width: 33.3%;
         float: left;
-    
+
     }
 
     #product:first-child{
-        width: 99.9%;
-        grid-template-areas: "itemsImage itemsImage itemsImage itemsImage itemsImage itemsImage"
-                             "itemName   itemName    itemName price price price"
-                             "brandname  brandname brandname brandname brandname brandname";
-
-                           }
+         width: 99.9%; 
+ }
 
  .footer{
      padding-top: 5em;
@@ -44,7 +40,7 @@
         text-align: center;
     }
  .itemsImage:hover {
-     opacity: 35%;
+     opacity: 50%;
  }
 
 }
