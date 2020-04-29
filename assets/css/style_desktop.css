@@ -9,6 +9,7 @@
 
    li:hover{
         color: var( --secondarycolor);
+        cursor: pointer;
     }
 
     ul{
@@ -18,7 +19,7 @@
     a {
         color: initial;
         text-decoration: none;
-        cursor: url(../icons/icons8-pixel-herz-50.png),auto;
+        cursor: url(../icons/icons8-pixel-herz-20.png),auto;
     }
 
     menu img{
